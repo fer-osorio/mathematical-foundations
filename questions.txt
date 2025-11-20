@@ -1,0 +1,11 @@
+What are:
+    - XSS (by escaping HTML characters)
+    - clickjacking
+    - path traversal
+attacks?
+
+SEMANTIC HTML: Using meaningful tags for accessibility and search engine optimization (SEO)"?
+Cryptographic operations should only run in secure contexts?
+What is a server?
+
+Introuduction to html, css and javascript using this project.

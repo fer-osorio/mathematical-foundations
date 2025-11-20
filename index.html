@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CHARACTER ENCODING & VIEWPORT -->
+    <!-- UTF-8: Ensures proper text rendering worldwide -->
+    <!-- viewport: Makes the site responsive on mobile devices -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SECURITY HEADERS (Applied via HTTP, shown here for documentation) -->
+    <!-- These prevent XSS, clickjacking, and other attacks -->
+    <!-- We'll implement these properly on your web server later -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'">
+
+    <title>Cryptography Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- SEMANTIC HTML: Using meaningful tags for accessibility and search engine optimization (SEO) -->
+    <!-- Unlike generic <div> tags, these tell browsers the structure's meaning -->
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">CryptoShop</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION: Introductory content -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Cryptography Portfolio</h1>
+                <p>Exploring the intersection of mathematics, cryptography, and web security</p>
+                <p class="subtitle">This site showcases cryptographic projects and interactive demonstrations</p>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION: Your GitHub projects -->
+        <section id="portfolio" class="portfolio">
+            <h2>Research & Projects</h2>
+            <div class="projects-grid">
+                <!-- PROJECT CARD 1 -->
+                <!-- Each card is a <article> (semantic HTML) containing project info -->
+                <article class="project-card">
+                    <h3>Project Template 1</h3>
+                    <p class="project-date">2024</p>
+                    <p class="project-description">
+                        Replace this with your actual project. Describe what cryptographic problem it solves.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Cryptography</span>
+                    </div>
+                    <a href="https://github.com/yourusername/project1" class="project-link" target="_blank">
+                        View on GitHub →
+                    </a>
+                </article>
+
+                <!-- PROJECT CARD 2 -->
+                <article class="project-card">
+                    <h3>Project Template 2</h3>
+                    <p class="project-date">2023</p>
+                    <p class="project-description">
+                        Another project showcasing your cryptographic work.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C</span>
+                        <span class="tag">Number Theory</span>
+                    </div>
+                    <a href="https://github.com/yourusername/project2" class="project-link" target="_blank">
+                        View on GitHub →
+                    </a>
+                </article>
+
+                <!-- PROJECT CARD 3 -->
+                <article class="project-card">
+                    <h3>Project Template 3</h3>
+                    <p class="project-date">2022</p>
+                    <p class="project-description">
+                        Your third project. This template repeats for however many projects you have.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Cryptanalysis</span>
+                    </div>
+                    <a href="https://github.com/yourusername/project3" class="project-link" target="_blank">
+                        View on GitHub →
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- TOOLS SECTION: Interactive cryptographic demonstrations -->
+        <section id="tools" class="tools">
+            <h2>Interactive Cryptographic Tools</h2>
+            <p class="section-intro">
+                These tools demonstrate cryptographic concepts in action.
+                Your knowledge applied in the browser.
+            </p>
+            <div class="tools-grid">
+                <!-- TOOL CARD 1: RSA Demo -->
+                <article class="tool-card">
+                    <h3>RSA Key Generation & Encryption</h3>
+                    <p>
+                        Generate RSA key pairs and perform encryption/decryption operations.
+                        Understand how public key cryptography works interactively.
+                    </p>
+                    <button class="btn-primary" onclick="navigateToTool('rsa-tool.html')">
+                        Open Tool
+                    </button>
+                </article>
+
+                <!-- TOOL CARD 2: Hash Functions (Future) -->
+                <article class="tool-card">
+                    <h3>Hash Function Visualizer</h3>
+                    <p>
+                        See how different hash functions process input and observe
+                        the avalanche effect property.
+                    </p>
+                    <button class="btn-primary" disabled>
+                        Coming Soon
+                    </button>
+                </article>
+
+                <!-- TOOL CARD 3: Symmetric Encryption (Future) -->
+                <article class="tool-card">
+                    <h3>Symmetric Encryption Explorer</h3>
+                    <p>
+                        Encrypt and decrypt messages using symmetric algorithms
+                        and observe key scheduling.
+                    </p>
+                    <button class="btn-primary" disabled>
+                        Coming Soon
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION: Your background -->
+        <section id="about" class="about">
+            <h2>About</h2>
+            <div class="about-content">
+                <p>
+                    I am a mathematician and computer scientist specializing in cryptography.
+                    This portfolio demonstrates how cryptographic theory translates into practice,
+                    from research-grade C/C++ implementations to interactive web-based demonstrations.
+                </p>
+                <p>
+                    My work focuses on [insert your specific cryptographic interests here].
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION: How to reach you -->
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <p>Interested in discussing cryptography or security?</p>
+                <ul class="contact-links">
+                    <li>
+                        <strong>GitHub:</strong>
+                        <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+                    </li>
+                    <li>
+                        <strong>Email:</strong>
+                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cryptography Portfolio. All rights reserved.</p>
+        <p class="security-note">
+            This site implements security best practices.
+            <a href="#security">Learn about web security here.</a>
+        </p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- Scripts load at the end of the body (performance best practice) -->
+    <!-- This ensures HTML renders before JavaScript executes -->
+    <script src="js/app.js"></script>
+</body>
+</html>
