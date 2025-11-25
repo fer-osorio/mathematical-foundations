@@ -11,4 +11,5 @@ What is a server and why nodejs?
 What is the relation between HTML and LaTeX?
 What is a Browser?
 Which are the common ways of saving and transmit keys in the industry?
+What is MVC (Model-View-Controller)?
 
