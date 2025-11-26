@@ -16,4 +16,6 @@ What is a Virtual Machine?
 What is a SandBox?
 What are MITM attacks?
 What are certificate chains?
+What is OAEP (Optimal Asymmetric Encryption Padding)?
+What are Hardware Security Modules (HSMs)?
 
