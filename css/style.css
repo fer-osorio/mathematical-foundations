@@ -138,9 +138,47 @@ header {
 }
 
 .logo {
+    display: flex;
+    align-items: center;        /* Vertically centers symbol with text */
+    gap: 0.75rem;               /* Space between symbol and text */
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
     margin: 0;  /* Override h1 margin-bottom */
+}
+
+.logo .symbol {
+    font-family: 'Times New Roman', serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+
+.logo .text {
+    display: flex;
+    flex-direction: column; /* Stack main/sub text vertically */
+    color: white;
+}
+
+.logo .text .main {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.logo .text .sub {
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    opacity: 0.9;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .logo .symbol { font-size: 2rem;
+    }
+    .logo .text {
+        font-size: 1.2rem;
+    }
 }
 
 .nav-links {
