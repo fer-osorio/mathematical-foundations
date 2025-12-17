@@ -140,6 +140,7 @@ header {
 .logo {
     display: flex;
     align-items: center;        /* Vertically centers symbol with text */
+    justify-content: space-between;
     gap: 0.75rem;               /* Space between symbol and text */
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
@@ -174,13 +175,14 @@ header {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-    /*.logo .symbol { font-size: 3rem;
-    }*/
+    .logo .symbol {
+        font-size: 3.111rem;
+    }
     .logo .text .main {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .logo .text .sub {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 }
 
